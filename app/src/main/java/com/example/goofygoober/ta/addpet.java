@@ -1,7 +1,9 @@
 package com.example.goofygoober.ta;
 
 import android.app.Activity;
+import android.app.AlarmManager;
 import android.app.DatePickerDialog;
+import android.app.PendingIntent;
 import android.app.VoiceInteractor;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -13,6 +15,7 @@ import android.os.ParcelFileDescriptor;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Adapter;
@@ -26,6 +29,7 @@ import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.Toast;
 
+import java.io.ByteArrayOutputStream;
 import java.io.FileDescriptor;
 import java.io.IOException;
 import java.util.Calendar;
@@ -34,18 +38,21 @@ import static android.R.attr.data;
 
 public class addpet extends AppCompatActivity {
 
-    Spinner tipekucing,genderkucing,breed,isibath1,isibath2;
-    Button pilih,cancel;
+    Spinner tipekucing,genderkucing,breed,isibath1,isibath2, isiVaccine1, isiVaccine2, isiFleas1, isiFleas2;
+    Button pilih,cancel,btnNext;
     //int RESULT_LOAD_IMAGE = 1;
     private static int RESULT_LOAD_IMAGE = 1;
     ImageView img;
-    EditText dob;
+    EditText dob, isiName, color;
     DatePickerDialog dpd;
+    private Bitmap bmp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.addpet);
+
+        bmp = BitmapFactory.decodeResource(getResources(), R.drawable.cat);
 
         tipekucing = (Spinner) findViewById(R.id.isiType);
         genderkucing = (Spinner) findViewById(R.id.isiGender);
@@ -54,7 +61,14 @@ public class addpet extends AppCompatActivity {
         isibath1 = (Spinner) findViewById(R.id.isiBath1);
         isibath2 = (Spinner) findViewById(R.id.isiBath2);
         dob = (EditText) findViewById(R.id.isiDoB);
+        isiName = (EditText) findViewById(R.id.isiName);
+        color = (EditText) findViewById(R.id.isiColor);
         cancel = (Button) findViewById(R.id.btnCancel);
+        isiVaccine1 = (Spinner) findViewById(R.id.isiVaccine1);
+        isiVaccine2 = (Spinner) findViewById(R.id.isiVaccine2);
+        isiFleas1 = (Spinner) findViewById(R.id.isiFleas1);
+        isiFleas2 = (Spinner) findViewById(R.id.isiFleas2);
+        btnNext = (Button) findViewById(R.id.btnNext);
 
 
         //balik lagi ke layout pets
@@ -139,6 +153,26 @@ public class addpet extends AppCompatActivity {
         adapter5.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         isibath2.setAdapter(adapter5);
 
+        //dropdown isiVaccine1
+        ArrayAdapter<CharSequence> adapter7 = ArrayAdapter.createFromResource(addpet.this, R.array.bath1, android.R.layout.simple_dropdown_item_1line);
+        adapter7.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        isiVaccine1.setAdapter(adapter4);
+
+        //dropdown isiVaccine2
+        ArrayAdapter<CharSequence> adapter8 = ArrayAdapter.createFromResource(addpet.this, R.array.bath2, android.R.layout.simple_dropdown_item_1line);
+        adapter8.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        isiVaccine2.setAdapter(adapter5);
+
+        //dropdown isiFleas1
+        ArrayAdapter<CharSequence> adapter9 = ArrayAdapter.createFromResource(addpet.this, R.array.bath1, android.R.layout.simple_dropdown_item_1line);
+        adapter9.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        isiFleas1.setAdapter(adapter4);
+
+        //dropdown isiFleas2
+        ArrayAdapter<CharSequence> adapter10 = ArrayAdapter.createFromResource(addpet.this, R.array.bath2, android.R.layout.simple_dropdown_item_1line);
+        adapter10.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        isiFleas2.setAdapter(adapter5);
+
         //pilih image dari gallery
         pilih.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -148,6 +182,23 @@ public class addpet extends AppCompatActivity {
 //                intent.setAction(Intent.ACTION_GET_CONTENT);
                 Intent i = new Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 startActivityForResult(i, RESULT_LOAD_IMAGE);
+            }
+        });
+
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                bmp.compress(Bitmap.CompressFormat.PNG, 90, stream);
+                byte[] image_byte = stream.toByteArray();
+                PetData petData = new PetData(isiName.getText().toString(), tipekucing.getSelectedItem().toString(), genderkucing.getSelectedItem().toString(), dob.getText().toString(), breed.getSelectedItem().toString(), color.getText().toString().toString(), Integer.parseInt(isibath1.getSelectedItem().toString()), Integer.parseInt(isiVaccine1.getSelectedItem().toString()), Integer.parseInt(isiFleas1.getSelectedItem().toString()), isibath2.getSelectedItem().toString(), isiVaccine2.getSelectedItem().toString(), isiFleas2.getSelectedItem().toString(), image_byte);
+                petData.save();
+
+                createAlarm(petData.getBath(), petData.getBathPer(), "Bath");
+                createAlarm(petData.getVaccine(), petData.getVaccinePer(), "Vaccine");
+                createAlarm(petData.getFleas(), petData.getFleasPer(), "Flea");
+
+                finish();
             }
         });
     }
@@ -169,7 +220,6 @@ public class addpet extends AppCompatActivity {
             cursor.close();
 
             ImageView img = (ImageView) findViewById(R.id.kucing);
-            Bitmap bmp = null;
             try {
                 bmp = getBitmapFromUri(selectedImage);
 
@@ -179,8 +229,8 @@ public class addpet extends AppCompatActivity {
             img.setImageBitmap(bmp);
         }
 
-        }
-        //get bitmap buat set ke imageview
+    }
+    //get bitmap buat set ke imageview
     private Bitmap getBitmapFromUri(Uri uri) throws IOException {
         ParcelFileDescriptor parcelFileDescriptor =
                 getContentResolver().openFileDescriptor(uri, "r");
@@ -188,6 +238,34 @@ public class addpet extends AppCompatActivity {
         Bitmap image = BitmapFactory.decodeFileDescriptor(fileDescriptor);
         parcelFileDescriptor.close();
         return image;
+    }
+
+    public void createAlarm(Integer intensity, String per, String type) {
+        Integer multipler = 1;
+        if(per.equals("Week")) {
+            multipler = 7;
+        } else if(per.equals("Month")) {
+            multipler = 30;
+        }
+
+        AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+        Intent alarmIntent = new Intent(addpet.this, AlarmReceiver1.class); // AlarmReceiver1 = broadcast receiver
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(addpet.this, 0, alarmIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        alarmIntent.setData((Uri.parse("custom://"+System.currentTimeMillis())));
+        alarmManager.cancel(pendingIntent);
+
+        Calendar alarmStartTime = Calendar.getInstance();
+        Calendar now = Calendar.getInstance();
+        alarmStartTime.set(Calendar.HOUR_OF_DAY, 8);
+        alarmStartTime.set(Calendar.MINUTE, 00);
+        alarmStartTime.set(Calendar.SECOND, 0);
+        if (now.after(alarmStartTime)) {
+            Log.d("Hey","Added a day");
+            alarmStartTime.add(Calendar.DATE, 1);
+        }
+
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, alarmStartTime.getTimeInMillis(), intensity * multipler * AlarmManager.INTERVAL_DAY, pendingIntent);
+        Log.d("Alarm","Alarms set for everyday 8 am.");
     }
 
 }

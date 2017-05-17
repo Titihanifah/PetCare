@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:background="#FFFFFF"
+    android:padding="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/gambar_pet"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/cat"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/nama_pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brown"
+            android:textColor="#121212"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/breed_pet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persian"
+            android:textColor="#121212"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/date_of_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4 months 6 days"
+            android:textColor="#121212"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+</LinearLayout>

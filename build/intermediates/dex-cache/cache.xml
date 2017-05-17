@@ -2,22 +2,121 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="E:\PAPB\PetCare\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Faldy\.android\build-cache\971563182cf3a3dc156afe10f39b07050f0f2f76\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="172b6ed908a5fb7dcc6fc7e7ffc77d3a96d5a044">
-        <dex dex="E:\PAPB\PetCare\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_e4d1c43d3d07a8523ef10da2474b6bc7c779a65b\classes.dex" />
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\Faldy\AndroidStudioProjects\PetCare\app\build\intermediates\pre-dexed\debug\classes_70c2a169cfad75bc9b5b47d0ca44bf7ebb93d9e4.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="E:\PAPB\PetCare\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Faldy\.android\build-cache\90cd7f331b6eaf54540107b2a6c68e19ecce8553\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
-        <dex dex="E:\PAPB\PetCare\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_f0a248802b890cf6c122413d04a5bf6f8721800e\classes.dex" />
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\Faldy\AndroidStudioProjects\PetCare\app\build\intermediates\pre-dexed\debug\classes_2fdd1484e02831477d03fa32b69f2b87c434142a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Faldy\.android\build-cache\83ba9e975a3f336ca87406fb9c2c3833e5417365\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\Faldy\AndroidStudioProjects\PetCare\app\build\intermediates\pre-dexed\debug\classes_0d640aacf62976b0107b6a7695a3493e5ac50d8c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Faldy\.android\build-cache\81900c65e237a865c7cc7c54b39b6ad42a11ff88\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6da05b7498da036b5b37c3beb861cd2060929dcd">
+        <dex dex="C:\Users\Faldy\AndroidStudioProjects\PetCare\app\build\intermediates\pre-dexed\debug\classes_0ea2c2e9d05999b8209acee06af4505f137b440f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Faldy\.android\build-cache\f5ea97d60bef51f446259139d28c2d710efc6f8d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\Faldy\AndroidStudioProjects\PetCare\app\build\intermediates\pre-dexed\debug\classes_f59020fa6bbd2d1d50e3ee0e6ac8337ff5f220bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Faldy\.android\build-cache\69f938f0077a97f16acbfb3b63ccf67a79acce6b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="07e07903922250dabf50c7d131d6fa069a050305">
+        <dex dex="C:\Users\Faldy\AndroidStudioProjects\PetCare\app\build\intermediates\pre-dexed\debug\classes_2d0f3c1dbf54d8f141c4ef10aff815f0c28338f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Faldy\.android\build-cache\1d9da0781c56c1bba9add2ff767865c5252f2ddd\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\Users\Faldy\AndroidStudioProjects\PetCare\app\build\intermediates\pre-dexed\debug\classes_f9521bc5d03c0b74164a088740cf52cb6cea5c02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Faldy\.android\build-cache\5300f27acaf1ae523d3ca7996ff90ae7665305f1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="C:\Users\Faldy\AndroidStudioProjects\PetCare\app\build\intermediates\pre-dexed\debug\classes_f3e3025a7b4313ab65035c750f06e3c4f39c2554.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Faldy\.android\build-cache\08d7051a02ed9924c5d9ef8d0e18512f3543abbd\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Faldy\AndroidStudioProjects\PetCare\app\build\intermediates\pre-dexed\debug\classes_78586081e334a698ff93607d7e9be0da2fe0e5c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Faldy\.android\build-cache\553ac9c25cdd2e511e06feb6a0d290fc801aafcc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="C:\Users\Faldy\AndroidStudioProjects\PetCare\app\build\intermediates\pre-dexed\debug\classes_aafc087b9eb73a1f9768614746b5737a05e28f1d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Faldy\.android\build-cache\64125eb851b36c2c97b23ac1fd00052d928aabf9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\Users\Faldy\AndroidStudioProjects\PetCare\app\build\intermediates\pre-dexed\debug\classes_95336d20d85ec4496fb11a574da9e6ee7e35fe18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Faldy\.android\build-cache\452d61afbf8232fed22e24ca291e8156469bc40d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="C:\Users\Faldy\AndroidStudioProjects\PetCare\app\build\intermediates\pre-dexed\debug\classes_f57f4964a61abfdd9e90935ac931234443beaff5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Faldy\.android\build-cache\6870c88516f07ed90049deec4136e5f4f12ac74d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="97ef155e31039e0888ef41f3041d5ad2821cf895">
+        <dex dex="C:\Users\Faldy\AndroidStudioProjects\PetCare\app\build\intermediates\pre-dexed\debug\classes_cb1063891cced13aa7adb679522a5c55df766075.jar" />
     </item>
 
 </items>

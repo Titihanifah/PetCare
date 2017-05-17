@@ -88,7 +88,7 @@ public class article extends AppCompatActivity {
         @Override
         protected String doInBackground(String... strings) {
           //  String urlstr ="http://feeds.feedburner.com/avma/fOlV";
-            String urlstr ="http://rss.detik.com/index.php/inetsi ";
+            String urlstr ="http://petcarepapb.blogspot.com/feeds/posts/default?alt=rss";
             String resultText = "";
 
             try{
