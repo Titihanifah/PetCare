@@ -43,26 +43,7 @@
             android:layout_toRightOf="@id/textType"
             />
 
-        <TextView
-            android:id="@+id/textLocation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Location  :"
-            android:textSize="20dp"
-            android:layout_marginTop="45dp"
-            android:textColor="#121212"
-            android:layout_below="@id/textType"
-            />
 
-        <Spinner
-            android:id="@+id/isiLocation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textColor="#121212"
-            android:layout_below="@id/isiTypeProf"
-            android:layout_toRightOf="@id/textLocation"
-            />
     </RelativeLayout>
 
     <TextView
