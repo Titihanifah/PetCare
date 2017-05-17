@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#ADE2FF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Information"
+        android:textColor="#121212"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imgProf"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/professional"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/textJudulProf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgProf"
+            android:text="Rumah Sakit Hewan Prof. Soeparwi"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:textColor="#121212"
+            android:textStyle="bold"/>
+        
+        <ImageView
+            android:id="@+id/imgLoc"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/imgProf"
+            android:src="@drawable/location"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            />
+        
+        <TextView
+            android:id="@+id/isiLocProf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textJudulProf"
+            android:layout_toRightOf="@id/imgLoc"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Jl. Akasia"
+            android:textColor="#121212"
+            />
+
+        <ImageView
+            android:id="@+id/imgPhone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/imgLoc"
+            android:src="@drawable/phone"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignRight="@+id/imgLoc"
+            android:layout_alignEnd="@+id/imgLoc" />
+
+        <TextView
+            android:id="@+id/isiPhoneProf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/isiLocProf"
+            android:layout_toRightOf="@id/imgLoc"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="0274 - 7412345"
+            android:textColor="#121212"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:textStyle="bold"
+            android:textColor="#121212"
+            android:padding="10dp"
+            android:layout_below="@id/imgPhone"/>
+    </RelativeLayout>
+</LinearLayout>

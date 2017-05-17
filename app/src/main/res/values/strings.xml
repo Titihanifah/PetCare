@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TA</string>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="tipe_kucing">
+        <item>Dog</item>
+        <item>Cat</item>
+    </string-array>
+    <string-array name="gender_kucing">
+        <item>Jantan</item>
+        <item>Betina</item>
+    </string-array>
+    <string-array name="breed">
+        <item>Munchkin</item>
+        <item>Persia</item>
+        <item>Anggora</item>
+        <item>Exotic</item>
+        <item>Himalayan</item>
+        <item>Sphynx</item>
+        <item>Ragdoll</item>
+    </string-array>
+    <string-array name="breedanjing">
+        <item>Bulldog</item>
+        <item>Labrador</item>
+        <item>Poodle</item>
+        <item>Dachsund</item>
+        <item>Chihuahua</item>
+        <item>Husky</item>
+        <item>Golden Retriever</item>
+    </string-array>
+    <string-array name="bath1">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="bath2">
+        <item>Week</item>
+        <item>Month</item>
+    </string-array>
+    <string-array name="typepro">
+        <item>Vet</item>
+        <item>Breeder</item>
+    </string-array>
+    <string-array name="location">
+        <item>Jakarta</item>
+        <item>Yogyakarta</item>
+        <item>Surabaya</item>
+        <item>Bandung</item>
+    </string-array>
+    <string-array name="lokasibreeder">
+        <item>Bandung</item>
+        <item>Jakarta</item>
+        <item>Surabaya</item>
+        <item>Yogyakarta</item>
+    </string-array>
+</resources>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#ADE2FF"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Edit Pet Info"
+                android:textColor="#121212"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/cat" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Change photo" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textBasic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Basic Information"
+                    android:textColor="#121212"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textBasic"
+                    android:padding="2dp"
+                    android:text="Name              :"
+                    android:textColor="#121212" />
+
+                <EditText
+                    android:id="@+id/isiName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textBasic"
+                    android:layout_toRightOf="@id/textName"
+                    android:hint="Pet's Name"
+                    android:padding="2dp"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/textType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textName"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:text="Type                :"
+                    android:textColor="#121212" />
+
+                <Spinner
+                    android:id="@+id/isiType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textName"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/textType"
+                    android:padding="2dp"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/textGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textType"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:text="Gender           :"
+                    android:textColor="#121212" />
+
+                <Spinner
+                    android:id="@+id/isiGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textType"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/textGender"
+                    android:padding="2dp"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/textDoB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textGender"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:text="Date of Birth  :"
+                    android:textColor="#121212" />
+
+                <EditText
+                    android:id="@+id/isiDoB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textGender"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/textDoB"
+                    android:hint="Pet's Date of Birth"
+                    android:padding="2dp"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/textBreed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textDoB"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:text="Breed              :"
+                    android:textColor="#121212" />
+
+                <Spinner
+                    android:id="@+id/isiBreed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textDoB"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/textBreed"
+                    android:padding="2dp"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/textColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textBreed"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:text="Color               :"
+                    android:textColor="#121212" />
+
+                <EditText
+                    android:id="@+id/isiColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textBreed"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/textColor"
+                    android:hint="Pet's Color"
+                    android:padding="2dp"
+                    android:textColor="#121212" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textReminder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="2dp"
+                    android:text="Reminder"
+                    android:textColor="#121212"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgBath"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/textReminder"
+                    android:padding="2dp"
+                    android:src="@drawable/bath" />
+
+                <TextView
+                    android:id="@+id/textBath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textReminder"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imgBath"
+                    android:padding="2dp"
+                    android:text="Bath"
+                    android:textColor="#121212" />
+
+                <Spinner
+                    android:id="@+id/isiBath1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textBath"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imgBath"
+                    android:padding="2dp"
+                    android:textColor="#121212"
+                    />
+
+                <TextView
+                    android:id="@+id/textPer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textBath"
+                    android:layout_toRightOf="@id/isiBath1"
+                    android:text="per"
+                    android:padding="2dp"
+                    android:textColor="#121212"
+                    />
+
+                <Spinner
+                    android:id="@+id/isiBath2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textBath"
+                    android:layout_toRightOf="@id/textPer1"
+                    android:padding="2dp"
+                    android:textColor="#121212"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgVaccine"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/imgBath"
+                    android:layout_marginTop="3dp"
+                    android:padding="2dp"
+                    android:src="@drawable/syringe" />
+
+                <TextView
+                    android:id="@+id/textVaccine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/isiBath1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/imgBath"
+                    android:padding="2dp"
+                    android:text="Vaccine"
+                    android:textColor="#121212" />
+
+                <Spinner
+                    android:id="@+id/isiVaccine1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textVaccine"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imgVaccine"
+                    android:padding="2dp"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/textPer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textVaccine"
+                    android:layout_toRightOf="@id/isiVaccine1"
+                    android:text="per"
+                    android:padding="2dp"
+                    android:textColor="#121212"
+                    />
+
+                <Spinner
+                    android:id="@+id/isiVaccine2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textVaccine"
+                    android:layout_toRightOf="@id/textPer2"
+                    android:padding="2dp"
+                    android:textColor="#121212"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgFleas"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/imgVaccine"
+                    android:layout_marginTop="3dp"
+                    android:padding="2dp"
+                    android:src="@drawable/pills" />
+
+                <TextView
+                    android:id="@+id/textFleas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/isiVaccine1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/imgFleas"
+                    android:padding="2dp"
+                    android:text="Fleas and Ticks"
+                    android:textColor="#121212" />
+
+                <Spinner
+                    android:id="@+id/isiFleas1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textFleas"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imgFleas"
+                    android:padding="2dp"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/textPer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textFleas"
+                    android:layout_toRightOf="@id/isiFleas1"
+                    android:text="per"
+                    android:padding="2dp"
+                    android:textColor="#121212"
+                    />
+
+                <Spinner
+                    android:id="@+id/isiFleas2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textFleas"
+                    android:layout_toRightOf="@id/textPer3"
+                    android:padding="2dp"
+                    android:textColor="#121212"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@id/btnCancel"
+                    android:text="Save" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

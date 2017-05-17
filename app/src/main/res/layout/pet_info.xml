@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#ADE2FF">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Pet Info"
+                android:textColor="#121212"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/cat" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textBasic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Basic Information"
+                    android:textColor="#121212"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textBasic"
+                    android:padding="2dp"
+                    android:text="Name              :"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/isiName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textBasic"
+                    android:layout_toRightOf="@id/textName"
+                    android:padding="2dp"
+                    android:text="Brown"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/textType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textName"
+                    android:padding="2dp"
+                    android:text="Type                :"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/isiType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textName"
+                    android:layout_toRightOf="@id/textType"
+                    android:padding="2dp"
+                    android:text="Cat"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/textGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textType"
+                    android:padding="2dp"
+                    android:text="Gender           :"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/isiGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textType"
+                    android:layout_toRightOf="@id/textGender"
+                    android:padding="2dp"
+                    android:text="Male"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/textDoB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textGender"
+                    android:padding="2dp"
+                    android:text="Date of Birth  :"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/isiDoB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textGender"
+                    android:layout_toRightOf="@id/textDoB"
+                    android:padding="2dp"
+                    android:text="26 November 2016"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/textBreed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textDoB"
+                    android:padding="2dp"
+                    android:text="Breed              :"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/isiBreed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textDoB"
+                    android:layout_toRightOf="@id/textBreed"
+                    android:padding="2dp"
+                    android:text="Persia"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/textColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textBreed"
+                    android:padding="2dp"
+                    android:text="Color               :"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/isiColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textBreed"
+                    android:layout_toRightOf="@id/textColor"
+                    android:padding="2dp"
+                    android:text="Black"
+                    android:textColor="#121212" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textReminder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="2dp"
+                    android:text="Reminder"
+                    android:textColor="#121212"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgBath"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/textReminder"
+                    android:padding="2dp"
+                    android:src="@drawable/bath" />
+
+                <TextView
+                    android:id="@+id/textBath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textReminder"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imgBath"
+                    android:padding="2dp"
+                    android:text="Bath"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/isiBath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textBath"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imgBath"
+                    android:padding="2dp"
+                    android:text="1 per month"
+                    android:textColor="#121212" />
+
+
+                <ImageView
+                    android:id="@+id/imgVaccine"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/imgBath"
+                    android:layout_marginTop="3dp"
+                    android:padding="2dp"
+                    android:src="@drawable/syringe" />
+
+                <TextView
+                    android:id="@+id/textVaccine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/isiBath"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/imgBath"
+                    android:padding="2dp"
+                    android:text="Vaccine"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/isiVaccine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textVaccine"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imgVaccine"
+                    android:padding="2dp"
+                    android:text="1 per month"
+                    android:textColor="#121212" />
+
+                <ImageView
+                    android:id="@+id/imgFleas"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/imgVaccine"
+                    android:layout_marginTop="3dp"
+                    android:padding="2dp"
+                    android:src="@drawable/pills" />
+
+                <TextView
+                    android:id="@+id/textFleas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/isiVaccine"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/imgFleas"
+                    android:padding="2dp"
+                    android:text="Fleas and Ticks"
+                    android:textColor="#121212" />
+
+                <TextView
+                    android:id="@+id/isiFleas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textFleas"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imgFleas"
+                    android:padding="2dp"
+                    android:text="1 per month"
+                    android:textColor="#121212" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Edit" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
