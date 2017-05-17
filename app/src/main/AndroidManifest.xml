@@ -13,8 +13,8 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/family"
+        android:label="PetCare"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -40,7 +40,7 @@
         <activity android:name=".pets" />
         <activity android:name=".article" />
         <activity android:name=".addpet" />
-        <activity android:name=".professional"></activity>
+        <activity android:name=".professional" />
     </application>
 
 </manifest>

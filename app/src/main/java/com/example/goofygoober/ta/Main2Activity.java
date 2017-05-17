@@ -9,15 +9,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Main2Activity extends AppCompatActivity {
-    ImageView pets,pro,article;
+    LinearLayout pets,pro,article;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
 
-        pets = (ImageView) findViewById(R.id.img1);
-        pro = (ImageView) findViewById(R.id.img2);
-        article = (ImageView) findViewById(R.id.img3);
+        pets = (LinearLayout) findViewById(R.id.pets);
+        pro = (LinearLayout) findViewById(R.id.pro);
+        article = (LinearLayout) findViewById(R.id.art);
         pets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,8 +35,8 @@ public class Main2Activity extends AppCompatActivity {
         article.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent a = new Intent(Main2Activity.this, article.class);
-                startActivity(a);
+                Intent intent = new Intent(Main2Activity.this, article.class );
+                startActivity(intent);
             }
         });
     }

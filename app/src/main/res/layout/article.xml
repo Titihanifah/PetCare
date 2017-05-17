@@ -1,37 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/article"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ADE2FF"
-    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp"
     tools:context="com.example.goofygoober.ta.article">
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Articles"
-        android:textColor="#121212"
-        android:textSize="30sp"
-        android:textStyle="bold"/>
-
-    <LinearLayout
+        android:textSize="24sp"
+        android:textAllCaps="true"
+        />
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ffffff"
-        android:layout_marginTop="10dp">
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:id="@+id/listBerita"
+        android:divider="#9c3035"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="15dp"
+        />
 
-        <ListView
-            android:id="@+id/listViewArticle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:divider="@color/colorPrimaryDark"
-            android:dividerHeight="1dp"
-            android:padding="3dp">
-        </ListView>
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>

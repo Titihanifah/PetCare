@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/itemImg"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@mipmap/ic_launcher"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Item1"
+            android:textColor="#f8f9fff9"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:background="#3b3a3a"/>
+
+        <TextView
+            android:id="@+id/pubDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PubDate"
+            android:textSize="16dp"
+            android:paddingLeft="10dp"
+            android:background="#f27072"
+            android:textColor="#f8f9fff9"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+
+            />
+    </LinearLayout>
+</LinearLayout>
